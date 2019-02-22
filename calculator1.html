@@ -20,11 +20,13 @@
 
         #angka1 {
             margin: 5px 5px 20px 5px;
+            width: 43%
         }
 
         #angka2 {
             margin-left: 20px;
             margin-bottom: 10px;
+            width: 43%
         }
 
         #hasilnya {
@@ -49,11 +51,13 @@
 
         }
 
-        #angka1,
-        #angka2,
-        #hasilnya {
+        #angka1,#angka2, #hasilnya {
             text-align: center;
 
+        }
+       input,#angka1,#angka2{
+            border-radius: 7px;
+            border: rgb(119, 75, 163) solid;
         }
 
         #hasilnya:hover {
@@ -63,6 +67,7 @@
         .a {
             background-color: rgb(15, 199, 190);
             border: rgb(15, 199, 190) solid;
+            margin-top: 3px; 
         }
 
         .tampung {
@@ -85,7 +90,7 @@
 
     <div class="container">
         <div class="tampung">
-                <div class="cal" style="font-family : monospace;color : white;">Calculator</div>
+            <div class="cal" style="font-family : monospace;color : white;">Calculator</div>
             <form id="formku">
                 Masukan Angka Pertama <input type="text" id="angka1" value=""><br />
                 Masukan Angka Kedua <input type="text" id="angka2" value=""><br />
