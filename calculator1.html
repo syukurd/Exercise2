@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+        #angka1 {
+            margin: 5px 5px 20px 5px;
+        }
+
+        #angka2 {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        .col-{
+            margin-left: 20%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form>
+            Masukan angka pertama <input type="text" id="angka1" value=""><br />
+            Masukan angka kedua <input type="text" id="angka2" value=""><br />
+            <div class="col-">
+                <button type="button" class="btn btn-info" onclick="tambah()" value="">+</button>
+                <button type="button" class="btn btn-info" onclick="kurang()" value="">-</button>
+                <button type="button" class="btn btn-info" onclick="bagi()" value="">/</button>
+                <button type="button" class="btn btn-info" onclick="kali()" value="">*</button>
+                <button type="button" class="btn btn-warning" onclick="hasil()" value="">Warning</button>
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+</body>
+<script src="hitung.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+</html>
