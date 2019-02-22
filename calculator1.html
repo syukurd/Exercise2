@@ -4,13 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Calculatorku</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <style>
+        #formku {
+            margin-left: 10%;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            color: white;
+        }
+
         #angka1 {
             margin: 5px 5px 20px 5px;
         }
@@ -19,8 +26,56 @@
             margin-left: 20px;
             margin-bottom: 10px;
         }
-        .col-{
-            margin-left: 20%;
+
+        #hasilnya {
+            margin-left: 12.9%;
+            margin-bottom: 15px;
+        }
+
+        .col- {
+            margin-top: 20px;
+            margin-left: 39%;
+        }
+
+        #hasilnya {
+            border: 1px rebeccapurple solid;
+            height: 30px;
+            width: 43%;
+            margin: 0px 17% 10px 38.7%;
+            margin-top: -25px;
+            background: white;
+            border-radius: 5px;
+            color: black;
+
+        }
+
+        #angka1,
+        #angka2,
+        #hasilnya {
+            text-align: center;
+
+        }
+
+        #hasilnya:hover {
+            box-shadow: 0 0 2px rebeccapurple;
+        }
+
+        .a {
+            background-color: rgb(15, 199, 190);
+            border: rgb(15, 199, 190) solid;
+        }
+
+        .tampung {
+            background: rgba(89, 15, 173, 0.747);
+            opacity: 50;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 10%;
+            width: 50%;
+            padding: 10px;
+            box-shadow: 4px 7px 2px rgb(132, 98, 167);
+
+
         }
     </style>
 
@@ -29,20 +84,25 @@
 <body>
 
     <div class="container">
-        <form>
-            Masukan angka pertama <input type="text" id="angka1" value=""><br />
-            Masukan angka kedua <input type="text" id="angka2" value=""><br />
-            <div class="col-">
-                <button type="button" class="btn btn-info" onclick="tambah()" value="">+</button>
-                <button type="button" class="btn btn-info" onclick="kurang()" value="">-</button>
-                <button type="button" class="btn btn-info" onclick="bagi()" value="">/</button>
-                <button type="button" class="btn btn-info" onclick="kali()" value="">*</button>
-                <button type="button" class="btn btn-warning" onclick="hasil()" value="">Warning</button>
-            </div>
+        <div class="tampung">
+                <div class="cal" style="font-family : monospace;color : white;">Calculator</div>
+            <form id="formku">
+                Masukan Angka Pertama <input type="text" id="angka1" value=""><br />
+                Masukan Angka Kedua <input type="text" id="angka2" value=""><br />
+                <br />Hasil <div id="hasilnya"></div>
 
+                <div class="col-">
+                    <button type="button" class="btn btn-info" onclick="tambah()" value="">+</button>
+                    <button type="button" class="btn btn-info" onclick="kurang()" value="">-</button>
+                    <button type="button" class="btn btn-info" onclick="bagi()" value="">/</button>
+                    <button type="button" class="btn btn-info" onclick="kali()" value="">*</button>
+                    <button type="reset" class="btn btn-info a" onclick="hasil()" value="">Reset</button>
+                </div>
 
-        </form>
-
+            </form>
+            <div class="syukur" style="text-align : right; font-family:vivaldi; color : white;font-size: 15px;">Syukur
+                beriman jaya lawolo</div>
+        </div>
     </div>
 
 
